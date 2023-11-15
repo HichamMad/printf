@@ -10,7 +10,8 @@ int _printf(const char * const format, ...)
 		{"%s", printf_string}, {"%c", printf_char},
 		{"%%", printf_37}, {"%i", printf_int}, {"%d", printf_dec},
 		{"%b", printf_bin}, {"%u", printf_unsigned}, {"%o", printf_oct},
-		{"%x", printf_hex}, {"%X", printf_HEX}, {"%S", printf_special_string}
+		{"%x", printf_hex}, {"%X", printf_HEX}, {"%S", printf_special_string},
+		{"%p", printf_pointer}
 	};
 
 	va_list args;
@@ -23,7 +24,7 @@ int _printf(const char * const format, ...)
 Here:
 	while (format[i] != '\0')
 	{
-		j = 9;
+		j = 11;
 		while (j >= 0)
 		{
 			if (p[j].t[0] == format[i] && p[j].t[1] == format[i + 1])
