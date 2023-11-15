@@ -8,7 +8,7 @@ int _printf(const char * const format, ...)
 {
 	convert_spec p[] = {
 		{"%s", printf_string}, {"%c", printf_char},
-		{"%%", printf_37}
+		{"%%", printf_37}, {"%i", printf_int}, {"%d", printf_dec}
 	};
 
 	va_list args;
@@ -21,7 +21,7 @@ int _printf(const char * const format, ...)
 Here:
 	while (format[i] != '\0')
 	{
-		j = 2;
+		j = 4;
 		while (j >= 0)
 		{
 			if (p[j].t[0] == format[i] && p[j].t[1] == format[i + 1])
