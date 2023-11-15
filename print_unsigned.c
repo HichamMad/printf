@@ -7,7 +7,7 @@
 int printf_unsigned(va_list args)
 {
 	unsigned int n = va_arg(args, unsigned int);
-	int num, rem = n % 10, digit,
+	int num, rem = n % 10, digit;
 	int exp = 1;
 	int i = 1;
 
