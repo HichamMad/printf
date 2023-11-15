@@ -19,7 +19,7 @@ int printf_HEX(va_list val)
 		count++;
 	}
 	count++;
-	array = malloc(count * sizeof(int));
+	arr = malloc(count * sizeof(int));
 
 	for (i = 0; i < count; i++)
 	{
