@@ -38,6 +38,6 @@ int printf_hex(va_list val);
 int printf_HEX(va_list val);
 int printf_HEX_sup(unsigned int num);
 int printf_special_string(va_list val);
-int printf_hex_sup(unsigned int num);
+int printf_hex_sup(unsigned long int num);
 int printf_pointer(va_list val);
 #endif
