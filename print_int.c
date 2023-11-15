@@ -10,7 +10,7 @@ int printf_int(va_list args)
 	int n = va_arg(args, int);
 	int num, rem = n % 10;
 	int digit;
-       	int exp = 1;
+	int exp = 1;
 	int i = 1;
 
 	n = n / 10;
